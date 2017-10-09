@@ -53,6 +53,14 @@ class OrderVC: UIViewController {
             dict["product_id"] = item.product_id
             dict["variation_id"] = item.variation_id
             dict["quantity"] = item.quantity
+            if let price = item.product.price {
+                if let iPrice = Double(price) {
+                    let total = iPrice * Double(item.quantity)!
+                    dict["subtotal"] = price
+                    dict["total"] = "\(total)"
+                    dict["discount"] = "0"
+                }
+            }
             
             lines_items.append(dict as [String : AnyObject])
             
@@ -62,9 +70,11 @@ class OrderVC: UIViewController {
             "payment_method": "",
             "payment_method_title": "Custom Payment",
             "set_paid": true,
-            "billing": "",
-            "shipping": "",
-            "line_items": lines_items
+            "billing": LoginVC.user.billingAddress!,
+            "shipping": LoginVC.user.shippingAddress!,
+            "customer_id": LoginVC.user.userId!,
+            "line_items": lines_items,
+            "discount_total": "0"
         ]
         
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
