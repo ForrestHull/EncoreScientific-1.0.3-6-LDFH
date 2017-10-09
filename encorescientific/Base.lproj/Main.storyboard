@@ -148,7 +148,7 @@
                                         <rect key="frame" x="0.0" y="28" width="358" height="85"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oqg-kh-Rb5" id="RrM-Ra-9bz">
-                                            <rect key="frame" x="0.0" y="0.0" width="358" height="85"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="358" height="84.666666666666671"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KuL-SV-kjo" userLabel="SKU # Label">
@@ -166,7 +166,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Re5-aw-Z8a" userLabel="Price Label">
-                                                    <rect key="frame" x="86" y="50" width="206" height="28"/>
+                                                    <rect key="frame" x="86" y="49" width="206" height="28"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
                                                     <color key="textColor" red="0.2326462567" green="0.2146762908" blue="0.2098731995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1207,7 +1207,7 @@
                                         <rect key="frame" x="0.0" y="28" width="414" height="85"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.80000000000000004" contentMode="center" tableViewCell="c5W-Yz-kEc" id="vMM-nl-0jq">
-                                            <rect key="frame" x="0.0" y="0.0" width="381" height="85"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="84.666666666666671"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Awh-7n-4t1" userLabel="Product Image">
@@ -1229,7 +1229,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fuo-CW-oCM" userLabel="Favorite">
-                                                    <rect key="frame" x="340" y="19" width="29" height="29"/>
+                                                    <rect key="frame" x="340" y="18" width="29" height="29"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" image="Star" backgroundImage="Star">
                                                         <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1240,7 +1240,7 @@
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z9l-X4-Gl5" userLabel="Price Label">
-                                                    <rect key="frame" x="87" y="37" width="238" height="26"/>
+                                                    <rect key="frame" x="87" y="36" width="238" height="26"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
                                                     <color key="textColor" red="0.2326462567" green="0.2146762908" blue="0.2098731995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
