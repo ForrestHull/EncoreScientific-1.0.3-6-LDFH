@@ -100,7 +100,12 @@ class ProductVC: UIViewController {
     
     @IBAction func exitPopUpSizePressed(_ sender: Any) {
         
-        let priceToConvert = Double(qtySelected!) * Double(priceSelected!)!
+        var priceToConvert: Double = 0
+        if let qty = qtySelected, let pSel = priceSelected {
+            if pSel != "" {
+                priceToConvert = Double(qty) * Double(pSel)!
+            }
+        }
         
         lbl_productPrice.text = String("$\(priceToConvert)0")
         
