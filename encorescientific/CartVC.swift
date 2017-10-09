@@ -60,6 +60,55 @@ class CartVC: UIViewController {
         }
     }
     
+    // MARK: - Shipping Method Change
+    
+    // Not index based
+    var selectedShippingMethod = 1
+    
+    // Colors for UI Buttons
+    let green: UIColor = #colorLiteral(red: 0.4469839931, green: 0.7501077056, blue: 0.267737031, alpha: 1)
+    let grey: UIColor = #colorLiteral(red: 0.4078096151, green: 0.4078620076, blue: 0.4077917933, alpha: 1)
+    
+    // Outlets to reference actual buttons for properties like Background Color
+    @IBOutlet weak var ground: UIButton!
+    @IBOutlet weak var twoDay: UIButton!
+    @IBOutlet weak var overnight: UIButton!
+    
+    // Individual actions when any button is pressed
+    @IBAction func changeToGroundShipping(_ sender: UIButton) {
+        changeBackgroundColor(button: sender)
+    }
+    
+    @IBAction func changeToTwoDayShipping(_ sender: UIButton) {
+        changeBackgroundColor(button: sender)
+    }
+    
+    @IBAction func changeToNextDay(_ sender: UIButton) {
+        changeBackgroundColor(button: sender)
+    }
+    
+    // Function that runs each time shipping buttion pressed
+    func changeBackgroundColor(button: UIButton) {
+        if button.tag == 0 {
+            selectedShippingMethod = 1
+            ground.backgroundColor = green
+            twoDay.backgroundColor = grey
+            overnight.backgroundColor = grey
+        } else if button.tag == 1 {
+            selectedShippingMethod = 2
+            ground.backgroundColor = grey
+            twoDay.backgroundColor = green
+            overnight.backgroundColor = grey
+        } else {
+            selectedShippingMethod = 3
+            ground.backgroundColor = grey
+            twoDay.backgroundColor = grey
+            overnight.backgroundColor = green
+        }
+    }
+    
+    
+    // MARK: - DB Changes
     //func to fetch database from WC
     func fetchDatabase(idToPass: String, priceToPass: String, cartItemToPass: CartItem) {
         print("fetching products...")
@@ -331,4 +380,9 @@ extension CartVC: UITableViewDelegate, UITableViewDataSource {
         return cell
         
     }
+    
+    
+    
+    
+    
 }
