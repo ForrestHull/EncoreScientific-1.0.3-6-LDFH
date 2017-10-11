@@ -332,7 +332,7 @@ class CartVC: UIViewController {
             
             // send the correct urlString to query WC database
             vc.cartProductsArray = cartProductsArray
-            
+            vc.shippingMethod = selectedShippingMethod
             vc.totalOrderAmount = totalCartAmount.description
         }
         

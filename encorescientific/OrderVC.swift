@@ -19,7 +19,8 @@ class OrderVC: UIViewController {
     @IBOutlet weak var lbl_totalOrderAmount: UILabel!
     
     var totalOrderAmount: String!
-
+    var shippingMethod: Int!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
